@@ -1,0 +1,54 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+img{display: block;}
+a{display: block;
+    text-decoration: none;
+    color: inherit;}
+
+#wrap{margin: 0 auto; width: 1200px;}
+
+header{background: rgb(231, 178, 173); height: 100px; display: flex;}
+#slide{background: rgb(179, 182, 218); height: 300px;}
+#contents{background: rgb(176, 224, 218); height: 200px;}
+footer{background: #ddd; height: 100px;}
+
+.logo{padding: 30px 0; background: rgb(253, 253, 174);}
+
+/* nav */
+
+.sub{display: none;}
+.gnb{background: #ccf;
+    display: flex;
+    width: 600px;
+    position: relative;
+    top:30px; left: 370px;}
+.gnb li{width: 150px;
+}
+.gnb a{text-align: center;
+        line-height: 40px;
+        }
+
+
+.gnb li:hover>a{background:rgb(242, 228, 255);}
+.gnb:hover .sub{display: block;}
+
+/* #slide */
+#slide{overflow: hidden;}
+#slide ul{animation: slide 9s infinite; display: flex; width: 400%;}
+@keyframes slide{
+    0%{margin-left: 0;}
+    33%{margin-left: -1200px;}
+    66%{margin-left: -2400px;}
+    100%{margin-left: -3600px;}
+}
+
+#contents{display: flex; text-align: center; line-height: 200px;}
+#notice{background: #ccc; width: 400px; height: 200px;}
+#banner{background: #ddd; width: 400px; height: 200px;}
+#link{background: #ccf; width: 400px; height: 200px;}
+
+footer{display: flex; text-align: center; line-height: 100px;}
+#f_logo{background: #ccc; width: 200px; height: 100px;}
+#copyright{background: #ddd; width: 800px; height: 100px;}
+#sns{background: #ccf; width: 200px; height: 100px;}
